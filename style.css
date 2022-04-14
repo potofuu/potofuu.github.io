@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
 :root {
     --bg-black-900: #000000;
@@ -13,6 +13,7 @@
     --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8; 
 }
 
+/* ------------------------------------------------------------------------- */
 
 body {
     font-size: 16px;
@@ -71,6 +72,10 @@ img {
     box-shadow: var(--outer-shadow);
 }
 
+.inner-shadow {
+    box-shadow: var(--inner-shadow);
+}
+
 .hover-shadow {
     position: relative;
     z-index: 1;
@@ -93,6 +98,8 @@ img {
 .hover-shadow:hover:after {
     box-shadow: var(--inner-shadow);
 }
+
+/* --------------------------------------------------------------------------- */
 
 .header {
     padding: 20px 15px;
@@ -155,4 +162,80 @@ img {
 
 .header .dropbutton span:after {
     top: 6px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.nav-menu {
+    position: fixed;
+    background-color: var(--bg-black-50);
+    padding: 0 15px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+}
+
+.nav-menu .close-nav-menu {
+    height: 40px;
+    width: 40px;
+    display: block;
+    font-size: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    text-align: center;
+    color: var(--bg-black-600);
+    transition: all 0.3s ease;
+}
+
+.nav-menu .close-nav-menu:after {
+    border-radius: 50%;
+}
+
+.nav-menu-inner {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu ul {
+    padding: 15px;
+}
+
+.nav-menu ul li {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nav-menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+.nav-menu ul li a {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-black-700);
+    padding: 5px 30px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu ul li a.active {
+    color: var(--skin-color);
+}
+
+.nav-menu ul li a:after {
+    border-radius: 30px;
 }
