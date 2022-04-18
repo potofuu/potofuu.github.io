@@ -505,7 +505,6 @@ img {
     width: 40px;
     font-size: 16px;
     text-align: center;
-    line-height: 40px;
     color: var(--text-black-600);
     margin: 0 4px;
     border-radius: 50%;
@@ -514,6 +513,14 @@ img {
 
 .about-section .about-img .socials a:after {
     border-radius: 50%;
+}
+
+.about-section .about-img .socials a:hover {
+    color: var(--skin-color);
+}
+
+.about-section .about-img .socials a i {
+    line-height: 40px;
 }
 
 .about-section .about-info {
