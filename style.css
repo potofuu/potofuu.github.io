@@ -254,6 +254,18 @@ img {
     }
 }
 
+@keyframes topFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-25px);
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 /* --------------------------------------------------------------------------- */
 
 .header {
@@ -575,6 +587,12 @@ img {
 .about-section .subset-info {
     flex: 0 0 100%;
     max-width: 100%;
+    display: none;
+}
+
+.about-section .subset-info.active {
+    display: block;
+    animation: topFadeIn 1s ease;
 }
 
 .about-section .skills {
