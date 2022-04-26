@@ -480,7 +480,6 @@ img {
 
 .home-section .home-text .button1 {
     margin-top: 25px;
-
 }
 
 .home-section .home-img .img-box {
@@ -489,14 +488,14 @@ img {
     margin: auto;
     border-radius: 50%;
     padding: 15px;
-    animation: morph 3.75s linear infinite;
+    /* animation: morph 3.75s linear infinite; */
 }
 
 .home-section .home-img .img-box img {
     width: 100%;
     border-radius: 50%;
     border: 10px solid transparent;
-    animation: morph 3.75s linear infinite;
+    /* animation: morph 3.75s linear infinite; */
 }
 
 @keyframes morph {
