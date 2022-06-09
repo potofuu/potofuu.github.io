@@ -795,14 +795,14 @@ img {
     height: 100%;
     border: 10px solid #162534;
     border-top-color: #fff;
-    border-bottom-color: pink;
+    border-bottom-color: lightblue;
     border-radius: 50%;
     animation: load-spin 5s linear infinite;
     margin: auto;
 }
 
 .load-inner {
-    border-top-color: pink;
+    border-top-color: lightblue;
     border-bottom-color: #fff;
     animation-duration: 2.5s;
 }
