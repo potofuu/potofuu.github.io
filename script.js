@@ -225,8 +225,7 @@ const legend = L.control({ position: "bottomleft" });
 legend.onAdd = function () {
   let div = L.DomUtil.create("div", "description");
   L.DomEvent.disableClickPropagation(div);
-  const text =
-    "<b>Chinese Food</b> has been adapted in many different cultures beyond just the United States. The integration for a few countries is showcased on the map. Click the red markers located around each region to view a popular restaurant and a defining dish.";
+  const text = `<b>Chinese Food</b> has been adapted in many different cultures beyond just the United States. The integration for a few countries is showcased on the map. Click the red markers located around each region to view a popular restaurant and a defining dish.<br><br>This project was made with <a href="https://leafletjs.com/index.html" target="blank">Leaflet</a>, an open source library. <br> View project code <a href="https://github.com/potofuu/potofuu.github.io" target="blank">here</a>`;
   div.insertAdjacentHTML("beforeend", text);
   return div;
 };
