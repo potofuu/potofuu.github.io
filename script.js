@@ -226,7 +226,7 @@ legend.onAdd = function () {
   let div = L.DomUtil.create("div", "description");
   L.DomEvent.disableClickPropagation(div);
   const text =
-    "<b>Chinese Food</b> has been adapted in many different cultures beyond just the United States. The integration for a few countries is showcased on the map. Click the markers located around each region to view a popular restaurant and a defining dish.";
+    "<b>Chinese Food</b> has been adapted in many different cultures beyond just the United States. The integration for a few countries is showcased on the map. Click the red markers located around each region to view a popular restaurant and a defining dish.";
   div.insertAdjacentHTML("beforeend", text);
   return div;
 };
